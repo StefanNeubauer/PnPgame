@@ -18,6 +18,10 @@ function loadImage() {
             img.src = URL.createObjectURL(file);
             img.alt = 'User Selected Image';
 
+            // Set CSS properties for resizing
+            img.style.maxWidth = '100%';  // Ensure the image fits the container width
+            img.style.maxHeight = '100%'; // Ensure the image fits the container height
+
             // Append the image to the container
             container.appendChild(img);
         } else {
