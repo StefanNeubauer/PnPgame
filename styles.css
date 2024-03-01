@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#characterCreationScreen,
+#gameScreen {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+
+#characterCreationForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#attributePoints label {
+    margin-top: 10px;
+}
+
+#options button {
+    margin-top: 10px;
+}
+
+#image-container {
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 20px;
+    border: 5px red;
+}

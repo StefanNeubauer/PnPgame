@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Text Adventure Game</title>
+</head>
+<body>
+    <div id="charPortrait">
+        <div id="image-container"></div>
+        <input type="file" id="imageInput" accept="image/*">
+        <button type="button" onclick="loadImage()">Load Image</button>
+    </div>
+    <div id="characterCreationScreen">
+        <h1>Character Creation</h1>
+        <form id="characterCreationForm">
+            <label for="characterName">Character Name:</label>
+            <input type="text" id="characterName" required>
+
+            
+            
+            <div id="attributePoints">
+                <h2>Attribute Points Allocation</h2>
+                <label for="courage">Courage:</label>
+                <input type="number" id="courage" min="0" max="100" value="0">
+                <!-- Add similar lines for other attributes -->
+            </div>
+            <button type="button" onclick="startGame()">Start Game</button>
+        </form>
+    </div>
+
+    <div id="gameScreen" style="display: none;">
+        <div id="output"></div>
+        <img id="image" src="" alt="Game Image">
+        <div id="options"></div>
+    </div>
+
+    <script src="game.js"></script>
+    <script src="characterCreator.js"></script>
+</body>
+</html>
